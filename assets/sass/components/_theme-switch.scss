@@ -11,6 +11,12 @@
 
 	&__label {
 		height: 3.2rem;
+		cursor: pointer;
 		width: 3.2rem;
+		transition: opacity 0.2s ease;
+
+		&:hover {
+			opacity: 0.7;
+		}
 	}
 }
