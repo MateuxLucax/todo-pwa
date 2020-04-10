@@ -1,0 +1,10 @@
+.footer {
+	height: 6.4rem;
+	padding: 0 2rem;
+	box-shadow: var(--box-shadow-upwards);
+	background: var(--list-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: var(--border-footer);
+}

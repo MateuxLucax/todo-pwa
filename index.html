@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>I'll do</title>
+</head>
+
+<body class="home light-theme">
+    <header class="header">
+        <div class="header__logo__container">
+            <svg class="header__logo header__logo--1">
+              <use xlink:href="assets/svgs/sprite.svg#ill-do"></use>
+            </svg>
+            <svg class="header__logo header__logo--2">
+                <use xlink:href="assets/svgs/sprite.svg#checkmark"></use>
+            </svg>
+        </div>
+        <div class="header__theme-switch theme-switch">
+            <label class="theme-switch__label" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <svg class="theme-switch__icon">
+                    <use xlink:href="assets/svgs/sprite.svg#brightness-contrast"></use>
+                </svg>
+            </label>
+       </div>
+    </header>
+
+    <main class="main">
+        <ul class="list">
+            <li class="list__item">
+                <label class="list__label">
+                    <div class="list__check">
+                        <input type="checkbox">
+                        <span></span>
+                    </div>
+                    <p class="list__text">Buy some groceries</p>
+                    </div>
+                </label>
+                <div class="list__reminder">
+                    <svg class="list__bell">
+                        <use xlink:href="assets/svgs/sprite.svg#bell"></use>
+                    </svg>
+                </div>
+            </li>
+
+            <li class="list__item">
+                <label class="list__label">
+                    <div class="list__check">
+                        <input type="checkbox">
+                        <span></span>
+                    </div>
+                    <p class="list__text list__text--checked">Buy some groceries</p>
+                    </div>
+                </label>
+                <div class="list__reminder">
+                    <svg class="list__bin">
+                        <use xlink:href="assets/svgs/sprite.svg#bin"></use>
+                    </svg>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <div class="input__container">
+            <input type="text" class="input__input" />
+            <button class="input__button">ADD</button>
+        </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

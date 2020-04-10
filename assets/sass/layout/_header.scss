@@ -1,0 +1,38 @@
+.header {
+	display: flex;
+	padding: 0 2rem;
+	height: 6.4rem;
+	background: var(--list-color);
+	border-bottom: var(--border-footer);
+	align-items: center;
+	box-shadow: var(--box-shadow);
+
+	&__logo {
+		height: 3.2rem;
+		width: 3.2rem;
+
+		&__container {
+			margin-left: auto;
+			height: 3.2rem;
+			align-self: center;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&--1 {
+			width: 3rem;
+			fill: var(--text-color);
+		}
+
+		&--2 {
+			margin-left: 1rem;
+			fill: var(--color-primary);
+		}
+	}
+
+	&__theme-switch {
+		margin-left: auto;
+	}
+}

@@ -1,0 +1,37 @@
+.input {
+	&__container {
+		flex: 1;
+		height: 3.2rem;
+		display: flex;
+		box-shadow: var(--box-shadow);
+	}
+
+	&__input {
+		flex: 1;
+		font-size: 1.6rem;
+		padding: 0.8rem;
+		color: var(--text-color);
+		border: var(--border);
+		background: var(--list-color);
+
+		&:focus {
+			outline: 0;
+			border: 0.2rem solid var(--color-primary);
+		}
+	}
+
+	&__button {
+		outline: none;
+		width: 4.8rem;
+		border: var(--border);
+		box-shadow: var(--box-shadow);
+		color: #020126;
+		background: var(--color-primary);
+
+		&:hover,
+		&:active {
+			box-shadow: none;
+			opacity: 0.7;
+		}
+	}
+}

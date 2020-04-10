@@ -1,0 +1,16 @@
+.theme-switch {
+	& input {
+		display: none;
+	}
+
+	&__icon {
+		height: 1.6rem;
+		width: 1.6rem;
+		fill: var(--text-color);
+	}
+
+	&__label {
+		height: 3.2rem;
+		width: 3.2rem;
+	}
+}
