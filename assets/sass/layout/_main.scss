@@ -1,4 +1,8 @@
 .main {
+	height: 100%;
 	height: calc(100vh - 12.8rem);
+
 	padding: 0 2rem;
+	overflow: scroll;
+	overflow-x: hidden;
 }

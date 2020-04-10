@@ -8,6 +8,9 @@ if (currentTheme) {
 	document.documentElement.setAttribute("data-theme", currentTheme);
 
 	if (currentTheme === "dark") {
+		document
+			.querySelector('meta[name="theme-color"]')
+			.setAttribute("content", "#000");
 		toggleSwitch.checked = true;
 	}
 }

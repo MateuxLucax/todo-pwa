@@ -181,7 +181,8 @@ body {
   border: var(--border);
   box-shadow: var(--box-shadow);
   color: #020126;
-  background: var(--color-primary); }
+  background: var(--color-primary);
+  font-size: 1.6rem; }
   .input__button:hover, .input__button:active {
     box-shadow: none;
     opacity: 0.7; }
@@ -215,8 +216,11 @@ body {
     margin-left: auto; }
 
 .main {
+  height: 100%;
   height: calc(100vh - 12.8rem);
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  overflow: scroll;
+  overflow-x: hidden; }
 
 .footer {
   height: 6.4rem;
