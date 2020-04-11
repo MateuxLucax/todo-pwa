@@ -95,12 +95,20 @@
 		}
 	}
 
-	&__reminder {
+	&__icon {
 		padding-left: 0.8rem;
+		cursor: pointer;
+		text-decoration: none;
 		margin-left: auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		transition: opacity 0.2s ease;
+
+		&:hover,
+		&:active {
+			opacity: 0.7;
+		}
 	}
 
 	&__bell {

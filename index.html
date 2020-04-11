@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+    <!-- 
+      
+      Desenvolvido por @mateuxlucax 
+        github.com/mateuxlucax
+    
+        "We've always defined
+      ourselves by the ability
+      to overcome the impossible"
+    
+    -->
+
 <head>
+    <meta name="author" content="Mateus Lucas Cruz Brandt">
+    <link rel="me" type="text" href="https://github.com/MateuxLucax">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
     <meta name="theme-color" content="#FFF" />
+    
+    <!-- SEO Tags -->
+    <meta name="description" content="Simple todo app built with HTML, CSS and JS." />
+    <meta name="language" content="EN" />
+    <meta name="keywords" content="Todo, Todo List, PWA, MateuxLucax" />
+    <meta name="robot" content="Index, Follow">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content="I'll do">
+    <link rel="apple-touch-icon" sizes="192x192" href="./assets/icons/icon-192x192.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" />
+    <link rel="apple-touch-icon" href="./assets/icons/favicon.png" />
+
     <title>I'll do</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body class="home light-theme">
@@ -30,49 +69,27 @@
     </header>
 
     <main class="main">
-        <ul class="list">
-            <li class="list__item">
-                <label class="list__label">
-                    <div class="list__check">
-                        <input type="checkbox">
-                        <span></span>
-                    </div>
-                    <p class="list__text">Buy some groceries</p>
-                    </div>
-                </label>
-                <div class="list__reminder">
-                    <svg class="list__bell">
-                        <use xlink:href="assets/svgs/sprite.svg#bell"></use>
-                    </svg>
-                </div>
-            </li>
-
-            <li class="list__item">
-                <label class="list__label">
-                    <div class="list__check">
-                        <input type="checkbox">
-                        <span></span>
-                    </div>
-                    <p class="list__text list__text--checked">Buy some groceries</p>
-                    </div>
-                </label>
-                <div class="list__reminder">
-                    <svg class="list__bin">
-                        <use xlink:href="assets/svgs/sprite.svg#bin"></use>
-                    </svg>
-                </div>
-            </li>
-        </ul>
+        <ul class="list"></ul>
     </main>
 
     <footer class="footer">
         <div class="input__container">
-            <input type="text" class="input__input" />
-            <button class="input__button">ADD</button>
+            <label for="task_input" style="display: none;">&nbsp;</label>
+            <input name="task_input" id="task" type="text" class="input__input" placeholder="I'll do...">
+            <button class="input__button" onclick="addTask()">ADD</button>
         </div>
     </footer>
 
-    <script src="./scripts/main.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('./service-worker.js')
+            .then(reg => console.info('Service worker successfully installed 😍', reg))
+            .catch(err => console.error('Something went worng while trying to install the service worker 😢', err));
+        }
+    </script>
+
+    <script src="./assets/javascript/main.js"></script>
+
 </body>
 
 </html>

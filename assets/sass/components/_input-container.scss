@@ -14,7 +14,8 @@
 		border: var(--border);
 		background: var(--list-color);
 
-		&:focus {
+		&:focus,
+		&:focus + button {
 			outline: 0;
 			border: 0.2rem solid var(--color-primary);
 		}
@@ -23,11 +24,12 @@
 	&__button {
 		outline: none;
 		width: 4.8rem;
-		border: var(--border);
+		border: var(--button-border);
 		box-shadow: var(--box-shadow);
 		color: #020126;
 		background: var(--color-primary);
 		font-size: 1.6rem;
+		line-height: 3.2rem;
 
 		&:hover,
 		&:active {
