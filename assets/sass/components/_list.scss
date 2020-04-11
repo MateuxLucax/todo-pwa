@@ -31,8 +31,8 @@
 	&__check {
 		position: relative;
 		display: block;
-		width: 1.6rem;
-		height: 1.6rem;
+		min-width: 1.6rem;
+		min-height: 1.6rem;
 
 		& input {
 			position: absolute;

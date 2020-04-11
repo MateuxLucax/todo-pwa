@@ -5,6 +5,7 @@
 	background: var(--list-color);
 	display: flex;
 	align-items: center;
+	z-index: 5;
 	justify-content: center;
 	border-top: var(--border-footer);
 }
