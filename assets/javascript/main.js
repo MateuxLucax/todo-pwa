@@ -148,9 +148,21 @@ toggleSwitch.addEventListener("change", switchTheme, false);
 
 // INIT
 
-window.onload = () => renderTasks();
+window.onload = () => {
+	renderTasks(), setDocHeight();
+};
 inputElement.addEventListener("keyup", function (event) {
 	if (event.keyCode === 13) {
 		document.querySelector(".input__button").click();
 	}
 });
+
+function setDocHeight() {
+	document.documentElement.style.setProperty(
+		"--vh",
+		`${window.innerHeight / 100}px`
+	);
+	console.log(window.innerHeight / 100);
+}
+addEventListener("resize", setDocHeight);
+addEventListener("orientationchange", setDocHeight);

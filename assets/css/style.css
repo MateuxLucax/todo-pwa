@@ -43,7 +43,8 @@ body {
 
 html,
 body {
-  height: 100%; }
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100); }
 
 *::selection {
   background: var(--color-text);
@@ -234,6 +235,7 @@ body {
 
 .main {
   height: 100%;
+  height: calc((var(--vh, 1vh) * 100) - 12.8rem);
   padding: 0 2rem;
   overflow: scroll;
   overflow-x: hidden; }
@@ -250,7 +252,5 @@ body {
 
 .home {
   display: flex;
-  min-height: 100vh;
-  max-height: 100vh;
   flex-direction: column;
   background-color: var(--color-background); }
