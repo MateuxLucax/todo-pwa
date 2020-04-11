@@ -1,6 +1,6 @@
 .header {
 	display: flex;
-	padding: 0 2rem;
+	padding: var(--padding);
 	height: 6.4rem;
 	background: var(--list-color);
 	border-bottom: var(--border-footer);

@@ -11,6 +11,19 @@
 	--border: none;
 	--button-border: 0.1rem solid #04bf68;
 	--border-footer: none;
+	--padding: 0 2rem;
+
+	@include responsive(tab-port) {
+		--padding: 0 8rem;
+	}
+
+	@include responsive(tab-land) {
+		--padding: 0 16rem;
+	}
+
+	@include responsive(desktop) {
+		--padding: 0 24rem;
+	}
 }
 
 [data-theme="dark"] {

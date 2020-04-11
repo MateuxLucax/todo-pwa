@@ -4,6 +4,12 @@
 	display: flex;
 	flex-direction: column;
 
+	@include responsive(tab-land) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2rem;
+	}
+
 	&__item {
 		display: flex;
 		border: var(--border);
@@ -15,6 +21,10 @@
 
 		&:not(:last-child) {
 			margin-bottom: 1.6rem;
+
+			@include responsive(tab-land) {
+				margin-bottom: 0;
+			}
 		}
 	}
 

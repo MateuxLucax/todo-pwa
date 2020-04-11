@@ -44,6 +44,11 @@
 
     <title>I'll do</title>
 
+    <!-- Fonts -->
+    <link rel="preload" as="font" type="font/woff2" href="./assets/fonts/open-sans-v17-latin-regular.woff" crossorigin>
+
+    <link rel="preload" as="font" type="font/woff2" href="./assets/fonts/open-sans-v17-latin-regular.woff2" crossorigin>
+    
     <!-- Style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -73,17 +78,17 @@
     </main>
 
     <footer class="footer">
-        <div class="input__container">
-            <label for="task_input" style="display: none;">&nbsp;</label>
-            <input name="task_input" id="task" type="text" class="input__input" placeholder="I'll do...">
+        <form class="input__container" onsubmit="return mySubmit(event)">
+            <label for="task_input" style="width: 0; color: transparent;">a</label>
+            <input name="task_input" id="task_input" type="text" class="input__input" placeholder="I'll do...">
             <button class="input__button" onclick="addTask()">ADD</button>
-        </div>
+        </form>
     </footer>
 
     <script>
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('./service-worker.js')
-            .then(reg => console.info('Service worker successfully installed 😍', reg))
+            .then(reg => console.log('Service worker successfully installed 😍'))
             .catch(err => console.error('Something went worng while trying to install the service worker 😢', err));
         }
     </script>

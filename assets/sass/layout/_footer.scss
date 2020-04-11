@@ -1,6 +1,6 @@
 .footer {
 	height: 6.4rem;
-	padding: 0 2rem;
+	padding: var(--padding);
 	box-shadow: var(--box-shadow-upwards);
 	background: var(--list-color);
 	display: flex;

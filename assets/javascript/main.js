@@ -162,7 +162,16 @@ function setDocHeight() {
 		"--vh",
 		`${window.innerHeight / 100}px`
 	);
-	console.log(window.innerHeight / 100);
 }
 addEventListener("resize", setDocHeight);
 addEventListener("orientationchange", setDocHeight);
+
+function mySubmit(e) { 
+	e.preventDefault(); 
+	try {
+	 someBug();
+	} catch (e) {
+	 throw new Error(e.message);
+	}
+	return false;
+  }

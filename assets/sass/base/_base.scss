@@ -10,7 +10,11 @@
 }
 
 html {
-	font-size: 62.5%;
+	font-size: 68.75%;
+
+	@include responsive(small-phone) {
+		font-size: 62.5%;
+	}
 }
 
 body {

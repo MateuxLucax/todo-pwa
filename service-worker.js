@@ -26,6 +26,10 @@ const filesToCache = [
 
 	// Imagens
 	"assets/svgs/sprite.svg",
+
+	// Fonts
+	"assets/fonts/open-sans-v17-latin-regular.woff",
+	"assets/fonts/open-sans-v17-latin-regular.woff2",
 ];
 
 // Cache on install

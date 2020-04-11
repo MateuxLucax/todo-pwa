@@ -2,7 +2,7 @@
 	height: 100%;
 	height: calc((var(--vh, 1vh) * 100) - 12.8rem);
 
-	padding: 0 2rem;
+	padding: var(--padding);
 	overflow: scroll;
 	overflow-x: hidden;
 }
