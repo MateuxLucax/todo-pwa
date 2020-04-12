@@ -166,6 +166,8 @@ function setDocHeight() {
 addEventListener("resize", setDocHeight);
 addEventListener("orientationchange", setDocHeight);
 
-function preventDefaultSubmit(form) {
-	form.preventDefault();
-}
+const form = document.querySelector('form .input__container');
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  console.log('Form submission cancelled.');
+});
