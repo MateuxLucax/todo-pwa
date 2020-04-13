@@ -11,30 +11,58 @@
 		font-size: 1.6rem;
 		padding: 0.8rem;
 		color: var(--text-color);
-		border: var(--border);
+		border: none;
 		background: var(--background-color);
 
-		&:focus,
-		&:focus + button {
+		&:focus {
 			outline: 0;
-			border: 0.2rem solid var(--color-primary);
+			border: none;
+			animation: blink-outline 1s infinite alternate;
 		}
 	}
 
 	&__button {
 		outline: none;
-		width: 4.8rem;
+		width: 3.2rem;
+		display: flex;
+		cursor: pointer;
+		position: relative;
 		border: var(--button-border);
 		box-shadow: var(--box-shadow);
-		color: #020126;
 		background: var(--color-primary);
-		font-size: 1.6rem;
-		line-height: 3.2rem;
+
+		&::after,
+		&::before {
+			content: "";
+			height: 0.2rem;
+			width: 1.6rem;
+			position: absolute;
+			background: #fff;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+
+		&::after {
+			transform-origin: center;
+			transform: rotate(90deg);
+		}
 
 		&:hover,
 		&:active {
 			box-shadow: none;
 			opacity: 0.7;
 		}
+	}
+}
+
+@keyframes blink-outline {
+	from {
+		outline: var(--color-primary) solid 0.2rem;
+	}
+	to {
+		outline: transparent solid 0.2rem;
 	}
 }

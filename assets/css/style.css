@@ -12,15 +12,12 @@
   @media only screen and (min-width: 46.875em), (orientation: landscape) {
     :root {
       --padding: 0 8rem; } }
-  @media only screen and (min-width: 60em) {
-    :root {
-      --padding: 0 16rem; } }
   @media only screen and (min-width: 75em) {
     :root {
-      --padding: 0 24rem; } }
+      --padding: 0 16rem; } }
 
 [data-theme="dark"] {
-  --icons-grey: #969696;
+  --icons-grey: #b1b1b1;
   --box-shadow: none;
   --box-shadow-upwards: none;
   --color-background: #000;
@@ -40,6 +37,12 @@ html {
   @media only screen and (max-width: 25em) {
     html {
       font-size: 62.5%; } }
+  @media only screen and (min-width: 46.875em), (orientation: landscape) {
+    html {
+      font-size: 85%; } }
+  @media only screen and (min-width: 60em) {
+    html {
+      font-size: 100%; } }
 
 body {
   box-sizing: border-box;
@@ -113,8 +116,11 @@ body {
       content: "";
       position: absolute;
       display: block;
-      left: 0.5rem;
-      top: 0.1rem;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
       width: 0.4rem;
       height: 1rem;
       border: 0.3rem solid var(--icons-grey);
@@ -124,11 +130,14 @@ body {
       content: "";
       position: absolute;
       display: block;
-      left: 0.5rem;
-      top: 0.1rem;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
       width: 0.4rem;
       height: 1rem;
-      border: 0.3rem solid var(--background-color);
+      border: 0.3rem solid #fff;
       border-width: 0 0.2rem 0.2rem 0;
       transform: rotate(45deg); }
   .list__label {
@@ -147,23 +156,36 @@ body {
       color: var(--icons-grey); }
   .list__icon {
     padding-left: 0.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
     cursor: pointer;
     text-decoration: none;
     margin-left: auto;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.2s ease; }
+    transition: opacity 0.2s ease;
+    background: var(--color-red); }
     .list__icon:hover, .list__icon:active {
       opacity: 0.7; }
-  .list__bell {
-    fill: var(--icons-grey);
-    height: 1.6rem;
-    width: 1.6rem; }
-  .list__bin {
-    fill: var(--color-red);
-    height: 1.6rem;
-    width: 1.6rem; }
+    .list__icon::after, .list__icon::before {
+      content: "";
+      height: 0.15rem;
+      width: 1rem;
+      position: absolute;
+      background: #fff;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto; }
+    .list__icon::before {
+      transform-origin: center;
+      transform: rotate(45deg); }
+    .list__icon::after {
+      transform-origin: center;
+      transform: rotate(135deg); }
 
 .btn__primary {
   color: #fff;
@@ -208,25 +230,45 @@ body {
   font-size: 1.6rem;
   padding: 0.8rem;
   color: var(--text-color);
-  border: var(--border);
+  border: none;
   background: var(--background-color); }
-  .input__input:focus,
-  .input__input:focus + button {
+  .input__input:focus {
     outline: 0;
-    border: 0.2rem solid var(--color-primary); }
+    border: none;
+    animation: blink-outline 1s infinite alternate; }
 
 .input__button {
   outline: none;
-  width: 4.8rem;
+  width: 3.2rem;
+  display: flex;
+  cursor: pointer;
+  position: relative;
   border: var(--button-border);
   box-shadow: var(--box-shadow);
-  color: #020126;
-  background: var(--color-primary);
-  font-size: 1.6rem;
-  line-height: 3.2rem; }
+  background: var(--color-primary); }
+  .input__button::after, .input__button::before {
+    content: "";
+    height: 0.2rem;
+    width: 1.6rem;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .input__button::after {
+    transform-origin: center;
+    transform: rotate(90deg); }
   .input__button:hover, .input__button:active {
     box-shadow: none;
     opacity: 0.7; }
+
+@keyframes blink-outline {
+  from {
+    outline: var(--color-primary) solid 0.2rem; }
+  to {
+    outline: transparent solid 0.2rem; } }
 
 .header {
   z-index: 5;

@@ -81,17 +81,17 @@
         <form class="input__container">
             <label for="task_input" style="width: 0; color: transparent;">a</label>
             <input name="task_input" id="task_input" type="text" class="input__input" placeholder="I'll do...">
-            <button class="input__button" onclick="addTask()">ADD</button>
+            <button class="input__button" onclick="addTask()"></button>
         </form>
     </footer>
 
-    <!-- <script>
+    <script>
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('./service-worker.js')
             .then(reg => console.log('Service worker successfully installed 😍'))
             .catch(err => console.error('Something went worng while trying to install the service worker 😢', err));
         }
-    </script> -->
+    </script>
 
     <script src="./assets/javascript/main.js"></script>
 

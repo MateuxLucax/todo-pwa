@@ -14,17 +14,13 @@
 		--padding: 0 8rem;
 	}
 
-	@include responsive(tab-land) {
-		--padding: 0 16rem;
-	}
-
 	@include responsive(desktop) {
-		--padding: 0 24rem;
+		--padding: 0 16rem;
 	}
 }
 
 [data-theme="dark"] {
-	--icons-grey: #969696;
+	--icons-grey: #b1b1b1;
 	--box-shadow: none;
 	--box-shadow-upwards: none;
 	--color-background: #000;
