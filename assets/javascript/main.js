@@ -166,12 +166,7 @@ function setDocHeight() {
 addEventListener("resize", setDocHeight);
 addEventListener("orientationchange", setDocHeight);
 
-function mySubmit(e) {
-	e.preventDefault();
-	try {
-		someBug();
-	} catch (e) {
-		throw new Error(e.message);
-	}
-	return false;
-}
+const form = document.querySelector('form');
+form.addEventListener('submit', event => {
+  event.preventDefault();
+});
