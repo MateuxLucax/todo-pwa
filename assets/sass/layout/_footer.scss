@@ -2,10 +2,9 @@
 	height: 6.4rem;
 	padding: var(--padding);
 	box-shadow: var(--box-shadow-upwards);
-	background: var(--list-color);
+	background: var(--background-color);
 	display: flex;
 	align-items: center;
 	z-index: 5;
 	justify-content: center;
-	border-top: var(--border-footer);
 }
