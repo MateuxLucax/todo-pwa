@@ -9,7 +9,7 @@
   --icons-grey: #dcdcdf;
   --color-red: #f20530;
   --padding: 0 2rem; }
-  @media only screen and (min-width: 46.875em), (orientation: landscape) {
+  @media only screen and (min-width: 46.875em) {
     :root {
       --padding: 0 8rem; } }
   @media only screen and (min-width: 75em) {
@@ -37,7 +37,7 @@ html {
   @media only screen and (max-width: 25em) {
     html {
       font-size: 62.5%; } }
-  @media only screen and (min-width: 46.875em), (orientation: landscape) {
+  @media only screen and (min-width: 46.875em) {
     html {
       font-size: 85%; } }
   @media only screen and (min-width: 60em) {
@@ -240,6 +240,7 @@ body {
 .input__button {
   outline: none;
   width: 3.2rem;
+  height: 3.2rem;
   display: flex;
   cursor: pointer;
   position: relative;

@@ -14,7 +14,7 @@
 	}
 
 	@if $breakpoint == tab-port {
-		@media only screen and (min-width: 46.875em), (orientation: landscape) {
+		@media only screen and (min-width: 46.875em) {
 			@content;
 		} // 750px or smartphones in landscape mode
 	}

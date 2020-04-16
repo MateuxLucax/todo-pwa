@@ -29,11 +29,6 @@ function renderTasks() {
 				<p class="list__text">${task}</p>
 				</div>
 			</label>
-			<div class="list__icon">
-				<!-- <svg class="list__bell">
-					<use xlink:href="assets/svgs/sprite.svg#bell"></use>
-				</svg> -->
-			</div>
 		</li>`;
 
 		listElement.insertAdjacentHTML("beforeend", markup);

@@ -35,5 +35,8 @@
 		"url": "https://github.com/MateuxLucax/todo-pwa/issues"
 	},
 	"type": "module",
-	"homepage": "https://github.com/MateuxLucax/todo-pwa#readme"
+	"homepage": "https://github.com/MateuxLucax/todo-pwa#readme",
+	"dependencies": {
+		"live-server": "^1.2.1"
+	}
 }
