@@ -1,5 +1,4 @@
-let today = new Date();
-const staticCacheName = `ill-do-1.0-${today.getDay()}`;
+const staticCacheName = "I'll do v2";
 const filesToCache = [
 	// Pages
 	"index.html",
@@ -48,7 +47,6 @@ this.addEventListener("activate", (event) => {
 		caches.keys().then((cacheNames) => {
 			return Promise.all(
 				cacheNames
-					.filter((cacheName) => cacheName.startsWith("ill-do-"))
 					.filter((cacheName) => cacheName !== staticCacheName)
 					.map((cacheName) => caches.delete(cacheName))
 			);

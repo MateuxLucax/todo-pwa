@@ -5,35 +5,25 @@
 	--box-shadow-upwards: 0 -0.4rem 1.2rem rgba(2, 1, 38, 0.3);
 	--color-background: #ededed;
 	--text-color: #020126;
-	--list-color: #ffffff;
+	--background-color: #ffffff;
 	--icons-grey: #dcdcdf;
 	--color-red: #f20530;
-	--border: none;
-	--button-border: 0.1rem solid #04bf68;
-	--border-footer: none;
 	--padding: 0 2rem;
 
 	@include responsive(tab-port) {
 		--padding: 0 8rem;
 	}
 
-	@include responsive(tab-land) {
-		--padding: 0 16rem;
-	}
-
 	@include responsive(desktop) {
-		--padding: 0 24rem;
+		--padding: 0 16rem;
 	}
 }
 
 [data-theme="dark"] {
-	--icons-grey: #969696;
-	--border-footer: 0.1rem solid #fff;
-	--button-border: 0.1rem solid #fff;
-	--border: 0.1rem solid #fff;
+	--icons-grey: #b1b1b1;
 	--box-shadow: none;
 	--box-shadow-upwards: none;
 	--color-background: #000;
 	--text-color: #fff;
-	--list-color: #000;
+	--background-color: rgba(255, 255, 255, 0.16);
 }

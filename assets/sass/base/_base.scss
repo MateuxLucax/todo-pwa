@@ -15,6 +15,14 @@ html {
 	@include responsive(small-phone) {
 		font-size: 62.5%;
 	}
+
+	@include responsive(tab-port) {
+		font-size: 85%;
+	}
+
+	@include responsive(tab-land) {
+		font-size: 100%;
+	}
 }
 
 body {
