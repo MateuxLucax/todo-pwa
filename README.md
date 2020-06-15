@@ -1,3 +1,8 @@
+<p align="center">
+  <img height="96" src="https://raw.githubusercontent.com/MateuxLucax/ill-do/master/assets/icons/icon-512x512.png">
+</p>
+
+
 # I'll Do
 
 Awesome lightweight to-do PWA. Built for personal purposes. And some 
