@@ -24,7 +24,7 @@ NodeJS v12.^
 Clone the repo to your device. Then run:
 
 ```
-  npm install
+npm install
 ```
 
 After it finished downloading all the modules, run:
