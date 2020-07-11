@@ -33,18 +33,16 @@
   scroll-behavior: smooth; }
 
 html {
-  font-size: 68.75%;
-  font-size: 100%; }
-  @media only screen and (max-width: 25em) {
+  font-size: 62.5%; }
+  @media only screen and (min-width: 37.5em) {
     html {
-      font-size: 62.5%; } }
+      font-size: 68.75%; } }
   @media only screen and (min-width: 46.875em) {
     html {
       font-size: 85%; } }
   @media only screen and (min-width: 60em) {
     html {
-      font-size: 100%;
-      font-size: 85%; } }
+      font-size: 100%; } }
 
 body {
   box-sizing: border-box;

@@ -10,20 +10,18 @@
 }
 
 html {
-	font-size: 68.75%;
+	font-size: 62.5%;
 
-	@include responsive(small-phone) {
-		font-size: 62.5%;
+	@include responsive(phone) {
+		font-size: 68.75%;
 	}
 
 	@include responsive(tab-port) {
 		font-size: 85%;
 	}
-	font-size: 100%;
 
 	@include responsive(tab-land) {
 		font-size: 100%;
-		font-size: 85%;
 	}
 }
 
