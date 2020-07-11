@@ -61,9 +61,9 @@
 
 @keyframes blink-outline {
 	from {
-		outline: var(--color-primary) solid 0.2rem;
+		border: var(--color-primary) solid 0.2rem;
 	}
 	to {
-		outline: transparent solid 0.2rem;
+		border: transparent solid 0.2rem;
 	}
 }
