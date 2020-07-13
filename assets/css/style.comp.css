@@ -1,5 +1,5 @@
 :root {
-  --font-default: "Open Sans", sans-serif;
+  --font-default: sans-serif;
   --color-primary: #04bf68;
   --box-shadow: 0 0.4rem 1.2rem rgba(2, 1, 38, 0.3);
   --box-shadow-upwards: 0 -0.4rem 1.2rem rgba(2, 1, 38, 0.3);

@@ -1,4 +1,4 @@
-const staticCacheName = "I'll do v2";
+const staticCacheName = "I'll do v3";
 const filesToCache = [
 	// Pages
 	"index.html",
@@ -27,8 +27,8 @@ const filesToCache = [
 	"assets/svgs/sprite.svg",
 
 	// Fonts
-	"assets/fonts/open-sans-v17-latin-regular.woff",
-	"assets/fonts/open-sans-v17-latin-regular.woff2",
+	// "assets/fonts/open-sans-v17-latin-regular.woff",
+	// "assets/fonts/open-sans-v17-latin-regular.woff2",
 ];
 
 // Cache on install
