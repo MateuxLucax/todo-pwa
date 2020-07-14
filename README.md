@@ -30,7 +30,7 @@ npm install
 After it finished downloading all the modules, run:
 
 ```
-npm run start
+npm start
 ```
 
 Now you are ready!
